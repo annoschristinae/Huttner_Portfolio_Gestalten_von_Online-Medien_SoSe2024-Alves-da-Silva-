@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychedelischer Fraktal-Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Psychedelischer Fraktal-Generator</h1>
+        <label for="iterations">Iterationen:</label>
+        <input type="number" id="iterations" min="1" max="1000" value="100">
+        <button onclick="generateFractal()">Generate</button>
+    
+        <button onclick="startAnimation()">Start Animation</button>
+        <button onclick="stopAnimation()">Stop Animation</button>
+    </div>
+
+    <div class="container">
+        <canvas id="fractalCanvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
